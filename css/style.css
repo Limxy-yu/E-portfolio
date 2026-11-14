@@ -1,0 +1,954 @@
+/* =========================================================
+   FIELD REPORT — Rubric-Aligned E-Portfolio Stylesheet
+   Author: Lim Xun Yi (Matric 298160)
+   ========================================================= */
+:root{
+  --ink:#10241F;
+  --ink-2:#173029;
+  --ink-3:#1F3D34;
+  --paper:#ECEFE6;
+  --paper-2:#F7F8F2;
+  --white:#FFFFFF;
+  --text:#16211D;
+  --text-soft:#44544B;
+  --line:#C9D2C1;
+  --line-dark:#2B463C;
+  --amber:#D98E3F;
+  --amber-light:#F3B469;
+  --amber-dark:#B3681E;
+  --brick:#A63C2E;
+  --brick-deep:#862E22;
+  --green:#2F7D57;
+  --font-display:'Space Grotesk', sans-serif;
+  --font-body:'Inter', sans-serif;
+  --font-mono:'IBM Plex Mono', monospace;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+
+body{
+  background-color:var(--paper);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='120'%3E%3Cpath d='M0 20 Q37.5 0 75 20 T150 20 T225 20 T300 20' stroke='%23B9C3AE' stroke-width='1' fill='none' opacity='0.55'/%3E%3Cpath d='M0 60 Q37.5 40 75 60 T150 60 T225 60 T300 60' stroke='%23B9C3AE' stroke-width='1' fill='none' opacity='0.35'/%3E%3Cpath d='M0 100 Q37.5 80 75 100 T150 100 T225 100 T300 100' stroke='%23B9C3AE' stroke-width='1' fill='none' opacity='0.25'/%3E%3C/svg%3E");
+  background-repeat:repeat;
+  color:var(--text);
+  font-family:var(--font-body);
+  line-height:1.68;
+}
+
+img{ max-width:100%; display:block; }
+
+h1,h2,h3,h4{
+  font-family:var(--font-display);
+  font-weight:600;
+  line-height:1.2;
+}
+
+p{ text-align:left; }
+ul{ list-style:none; }
+
+.hero,
+.dark-section{
+  background-color:var(--ink);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='120'%3E%3Cpath d='M0 20 Q37.5 0 75 20 T150 20 T225 20 T300 20' stroke='%233E6357' stroke-width='1' fill='none' opacity='0.45'/%3E%3Cpath d='M0 60 Q37.5 40 75 60 T150 60 T225 60 T300 60' stroke='%233E6357' stroke-width='1' fill='none' opacity='0.3'/%3E%3Cpath d='M0 100 Q37.5 80 75 100 T150 100 T225 100 T300 100' stroke='%233E6357' stroke-width='1' fill='none' opacity='0.22'/%3E%3C/svg%3E");
+  background-repeat:repeat;
+}
+
+.container{ max-width:1180px; margin:auto; padding:0 36px; }
+.container.narrow{ max-width:840px; }
+
+/* Accessibility */
+.skip-link{
+  position:absolute; left:-9999px; top:0;
+  background:var(--amber); color:var(--ink);
+  padding:12px 20px; z-index:2000;
+  font-family:var(--font-mono); font-weight:600;
+  border-radius:0 0 8px 0;
+}
+.skip-link:focus{ left:0; }
+
+a:focus-visible, button:focus-visible{
+  outline:3px solid var(--amber);
+  outline-offset:3px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important; scroll-behavior:auto !important; animation:none !important; }
+}
+
+body.text-larger p, body.text-larger li, body.text-larger td,
+body.text-larger .experience-note, body.text-larger blockquote{ font-size:1.12em; }
+body.text-largest p, body.text-largest li, body.text-largest td,
+body.text-largest .experience-note, body.text-largest blockquote{ font-size:1.25em; }
+
+/* =========================================================
+   Navigation
+   ========================================================= */
+nav{
+  position:fixed; top:0; left:0; width:100%;
+  display:flex; flex-wrap:wrap; gap:12px;
+  justify-content:space-between; align-items:center;
+  padding:12px 32px;
+  background:rgba(16,36,31,.96);
+  backdrop-filter:blur(8px);
+  z-index:999;
+  border-bottom:1px solid var(--line-dark);
+}
+
+.nav-brand{
+  display:flex; align-items:center; gap:10px;
+  color:var(--amber); text-decoration:none;
+}
+.compass{ width:28px; height:28px; flex-shrink:0; }
+.brand-text{ display:flex; flex-direction:column; line-height:1.25; }
+.brand-name{
+  font-family:var(--font-display); font-weight:700;
+  font-size:15px; color:#fff; letter-spacing:.03em;
+}
+.brand-coords{
+  font-family:var(--font-mono); font-size:10px;
+  color:var(--amber); letter-spacing:.03em;
+}
+
+.nav-links{
+  display:flex; flex-wrap:wrap; gap:2px; align-items:center;
+  font-family:var(--font-mono); font-size:12.5px;
+}
+.nav-link{
+  text-decoration:none; color:#D7DED6;
+  padding:7px 10px; border-radius:4px;
+  transition:.2s; position:relative;
+}
+.nav-link:hover{ color:#fff; background:rgba(255,255,255,.08); }
+.nav-link.active{ color:var(--amber); }
+.nav-link.active::after{
+  content:""; position:absolute;
+  left:10px; right:10px; bottom:2px;
+  height:2px; background:var(--amber);
+}
+
+.nav-actions{
+  display:flex; align-items:center; gap:8px;
+}
+
+.nav-report-btn{
+  display:inline-flex; align-items:center; gap:6px;
+  background:var(--amber); color:var(--ink);
+  text-decoration:none; font-family:var(--font-mono);
+  font-size:12px; font-weight:600;
+  padding:7px 13px; border-radius:5px;
+  transition:.25s; white-space:nowrap;
+}
+.nav-report-btn:hover{ background:#fff; color:var(--ink); }
+
+.text-size-controls{ display:flex; gap:4px; }
+.text-size-controls button{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.3);
+  color:#fff; border-radius:5px;
+  padding:4px 8px; cursor:pointer;
+  font-family:var(--font-mono); font-size:11.5px;
+  transition:.2s;
+}
+.text-size-controls button:hover{
+  background:var(--amber); border-color:var(--amber); color:var(--ink);
+}
+
+/* =========================================================
+   Shared Section Typography & Layout
+   ========================================================= */
+.field-tag{
+  font-family:var(--font-mono);
+  font-size:12.5px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--brick-deep);
+  margin-bottom:10px;
+}
+.field-tag.light{ color:var(--amber); }
+
+.container h2{
+  font-size:36px;
+  margin-bottom:18px;
+}
+h2.on-dark{ color:#fff; }
+
+.section-subtitle{
+  color:var(--text-soft);
+  font-size:16.5px;
+  max-width:780px;
+  margin-bottom:42px;
+}
+.section-subtitle.on-dark{ color:#C4CEC0; }
+
+section{ padding:96px 0; position:relative; }
+section.dark-section{ color:#fff; }
+
+/* Buttons */
+.btn-group{
+  display:flex; flex-wrap:wrap; gap:12px; align-items:center;
+}
+.button{
+  display:inline-flex; align-items:center; gap:9px;
+  padding:13px 22px;
+  background:var(--amber); color:var(--ink);
+  text-decoration:none; border:none; cursor:pointer;
+  border-radius:6px;
+  font-family:var(--font-mono); font-weight:600;
+  font-size:13.5px; letter-spacing:.02em;
+  transition:.25s;
+}
+.button:hover{ background:#fff; color:var(--ink); transform:translateY(-2px); }
+
+.button-outline{
+  display:inline-flex; align-items:center; gap:9px;
+  padding:12px 20px;
+  background:transparent; color:#fff;
+  border:1.5px solid var(--amber);
+  text-decoration:none; cursor:pointer;
+  border-radius:6px;
+  font-family:var(--font-mono); font-weight:600;
+  font-size:13.5px; transition:.25s;
+}
+.button-outline:hover{ background:rgba(217,142,63,.18); transform:translateY(-2px); }
+
+.button-dark{
+  display:inline-flex; align-items:center; gap:9px;
+  padding:12px 20px;
+  background:var(--ink); color:#fff;
+  border:1.5px solid var(--ink);
+  text-decoration:none; cursor:pointer;
+  border-radius:6px;
+  font-family:var(--font-mono); font-weight:600;
+  font-size:13px; transition:.25s;
+}
+.button-dark:hover{ background:var(--brick); border-color:var(--brick); color:#fff; transform:translateY(-2px); }
+
+.button-paper{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:11px 18px;
+  background:var(--paper-2); color:var(--ink);
+  border:1.5px solid var(--ink);
+  text-decoration:none; cursor:pointer;
+  border-radius:6px;
+  font-family:var(--font-mono); font-weight:600;
+  font-size:13px; transition:.25s;
+}
+.button-paper:hover{ background:var(--amber); border-color:var(--amber); color:var(--ink); }
+
+/* =========================================================
+   Section 1.0: Landing Page / Hero Profile Snapshot
+   ========================================================= */
+.hero{
+  min-height:92vh;
+  display:flex; align-items:center;
+  color:#fff;
+  padding:130px 0 80px;
+  position:relative; overflow:hidden;
+}
+.hero-route{
+  position:absolute; right:-30px; top:8%;
+  width:55%; max-width:620px; opacity:.55; pointer-events:none;
+}
+.route-label{ font-family:var(--font-mono); font-size:11px; fill:var(--amber); }
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:270px 1fr;
+  gap:48px;
+  align-items:center;
+  position:relative; z-index:2;
+}
+
+.snapshot-card{
+  background:var(--ink-2);
+  border:1.5px solid var(--amber);
+  border-radius:12px;
+  padding:14px;
+  box-shadow:0 18px 40px rgba(0,0,0,.35);
+  text-align:center;
+}
+.snapshot-photo-wrap{
+  width:100%;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  border-radius:8px;
+  border:1px solid var(--line-dark);
+  background:#1c352e;
+}
+.snapshot-photo-wrap img{
+  width:100%; height:100%;
+  object-fit:cover; object-position:center top;
+  display:block;
+}
+.snapshot-meta{
+  margin-top:12px;
+  font-family:var(--font-mono);
+  font-size:11.5px;
+  color:var(--amber);
+  letter-spacing:.05em;
+}
+.snapshot-sub{
+  font-size:11px;
+  color:#C4CEC0;
+  margin-top:3px;
+}
+
+.hero-content h4{
+  font-family:var(--font-mono);
+  font-size:15px; color:var(--amber);
+  margin-bottom:6px; letter-spacing:.04em;
+}
+.hero-content h1{
+  font-size:56px; margin-bottom:8px; color:#fff;
+}
+.hero-degree{
+  font-size:20px; font-weight:500;
+  color:#E3EAE0; margin-bottom:14px;
+}
+.hero-tagline{
+  display:inline-block;
+  background:rgba(217,142,63,.16);
+  border-left:4px solid var(--amber);
+  padding:10px 16px;
+  font-family:var(--font-display);
+  font-size:19px; font-weight:500;
+  color:var(--amber-light);
+  margin-bottom:22px;
+  border-radius:0 6px 6px 0;
+}
+.hero-desc{
+  font-size:16.5px; color:#D7DED6;
+  max-width:650px; margin-bottom:28px; line-height:1.7;
+}
+
+/* =========================================================
+   Section 2.0: About Me (Elevator Pitch)
+   ========================================================= */
+.about-layout{
+  display:grid;
+  grid-template-columns:1.35fr 1fr;
+  gap:36px;
+  align-items:start;
+}
+.pitch-card{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-left:5px solid var(--brick);
+  border-radius:10px;
+  padding:32px 34px;
+  box-shadow:0 6px 20px rgba(16,36,31,.05);
+}
+.pitch-header{
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:14px; flex-wrap:wrap; gap:8px;
+}
+.pitch-header h3{
+  font-size:21px; color:var(--ink);
+}
+.badge-pill{
+  font-family:var(--font-mono);
+  font-size:11.5px; font-weight:600;
+  background:var(--ink); color:var(--amber);
+  padding:4px 10px; border-radius:20px;
+}
+.pitch-text{
+  font-size:16.5px;
+  line-height:1.8;
+  color:var(--text);
+  text-align:justify;
+}
+
+.about-side-cards{
+  display:flex; flex-direction:column; gap:20px;
+}
+.info-box{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:24px 26px;
+}
+.info-box h3{
+  font-size:18px; color:var(--brick-deep);
+  margin-bottom:12px; display:flex; align-items:center; gap:8px;
+}
+.info-box p{
+  font-size:14.8px; color:var(--text-soft); line-height:1.68;
+}
+
+.chip-list{ display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+.chip-list li{
+  font-family:var(--font-mono);
+  font-size:12.5px;
+  background:#fff;
+  border:1px solid var(--line);
+  padding:6px 12px;
+  border-radius:20px;
+  color:var(--text);
+}
+
+/* =========================================================
+   Section 3.0: Career Profile (Resume)
+   ========================================================= */
+.resume-banner{
+  background:var(--ink-2);
+  border:1px solid var(--line-dark);
+  border-radius:10px;
+  padding:24px 28px;
+  margin-bottom:34px;
+  display:flex; flex-wrap:wrap;
+  justify-content:space-between; align-items:center;
+  gap:18px;
+}
+.resume-contact-list{
+  display:flex; flex-wrap:wrap; gap:18px;
+  font-family:var(--font-mono); font-size:13px; color:#E3EAE0;
+}
+.resume-contact-list span, .resume-contact-list a{
+  display:inline-flex; align-items:center; gap:7px;
+  color:#E3EAE0; text-decoration:none;
+}
+.resume-contact-list a:hover{ color:var(--amber); text-decoration:underline; }
+.resume-contact-list i{ color:var(--amber); }
+
+.resume-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+}
+.resume-card{
+  background:var(--ink-2);
+  border:1px solid var(--line-dark);
+  border-radius:10px;
+  padding:28px;
+}
+.resume-card.full-width{ grid-column:1 / -1; }
+.resume-card h3{
+  color:var(--amber);
+  font-size:18px;
+  margin-bottom:18px;
+  padding-bottom:10px;
+  border-bottom:1px solid var(--line-dark);
+  display:flex; align-items:center; gap:10px;
+}
+
+.exp-item{
+  margin-bottom:20px;
+  padding-bottom:18px;
+  border-bottom:1px dashed var(--line-dark);
+}
+.exp-item:last-child{ margin-bottom:0; padding-bottom:0; border-bottom:none; }
+.exp-top{
+  display:flex; justify-content:space-between; align-items:baseline;
+  flex-wrap:wrap; gap:6px; margin-bottom:4px;
+}
+.exp-role{ font-weight:600; font-size:16.5px; color:#fff; }
+.exp-date{
+  font-family:var(--font-mono); font-size:12px;
+  color:var(--amber);
+}
+.exp-org{
+  font-size:14px; color:#B9C3AE; margin-bottom:8px; font-weight:500;
+}
+.exp-bullets{ padding-left:0; }
+.exp-bullets li{
+  font-size:14.2px; color:#D7DED6;
+  margin-bottom:6px; padding-left:16px; position:relative;
+}
+.exp-bullets li::before{
+  content:"▸"; color:var(--amber);
+  position:absolute; left:0;
+}
+
+.skills-matrix{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));
+  gap:16px;
+}
+.skill-cat{
+  background:rgba(16,36,31,.65);
+  border:1px solid var(--line-dark);
+  border-radius:8px;
+  padding:16px;
+}
+.skill-cat h4{
+  font-family:var(--font-mono);
+  font-size:12.5px; color:var(--amber);
+  text-transform:uppercase; letter-spacing:.04em;
+  margin-bottom:10px;
+}
+.skill-cat p{
+  font-size:13.8px; color:#D7DED6; line-height:1.55;
+}
+
+/* =========================================================
+   Section 4.0: Academic Journey (Signature Work Showcase)
+   ========================================================= */
+.work-stack{
+  display:flex; flex-direction:column; gap:36px;
+}
+.work-card{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-top:4px solid var(--brick);
+  border-radius:12px;
+  padding:34px;
+  box-shadow:0 8px 24px rgba(16,36,31,.05);
+}
+.work-header{
+  display:flex; justify-content:space-between; align-items:flex-start;
+  flex-wrap:wrap; gap:16px;
+  margin-bottom:22px;
+  padding-bottom:16px;
+  border-bottom:1px solid var(--line);
+}
+.work-num{
+  font-family:var(--font-mono);
+  font-size:12px; font-weight:600;
+  color:var(--brick-deep);
+  text-transform:uppercase; letter-spacing:.06em;
+  display:block; margin-bottom:5px;
+}
+.work-header h3{
+  font-size:23px; color:var(--ink); max-width:760px;
+}
+.work-meta-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:18px;
+  margin-bottom:20px;
+}
+.work-field{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:16px 18px;
+}
+.work-field.wide{ grid-column:1 / -1; }
+.work-field-label{
+  font-family:var(--font-mono);
+  font-size:11.5px; font-weight:600;
+  text-transform:uppercase; letter-spacing:.05em;
+  color:var(--brick-deep);
+  margin-bottom:6px; display:block;
+}
+.work-field p{
+  font-size:14.8px; color:var(--text); line-height:1.68;
+}
+
+.work-thumbs{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
+  gap:14px;
+  margin-top:18px;
+}
+.thumb-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:8px;
+  cursor:pointer;
+  transition:.25s;
+}
+.thumb-card:hover{
+  border-color:var(--amber);
+  transform:translateY(-3px);
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
+.thumb-card img{
+  width:100%; height:140px;
+  object-fit:cover; border-radius:4px;
+  margin-bottom:7px;
+}
+.thumb-card span{
+  display:block;
+  font-family:var(--font-mono);
+  font-size:11.5px; color:var(--text-soft);
+  text-align:center;
+}
+
+/* Collapsible FYP Deep-Dive Details */
+details.fyp-details{
+  margin-top:20px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:16px 20px;
+}
+details.fyp-details summary{
+  cursor:pointer;
+  font-family:var(--font-mono);
+  font-size:13.5px; font-weight:600;
+  color:var(--ink);
+  list-style:none;
+  display:flex; align-items:center; justify-content:space-between;
+}
+details.fyp-details summary::-webkit-details-marker{ display:none; }
+details.fyp-details[open] summary{
+  margin-bottom:18px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--line);
+  color:var(--brick-deep);
+}
+.mini-grid-3{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:14px;
+  margin:14px 0 20px;
+}
+.mini-box{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:14px;
+}
+.mini-box h4{ font-size:15px; color:var(--brick-deep); margin-bottom:6px; }
+.mini-box li, .mini-box p{ font-size:13.5px; color:var(--text-soft); }
+
+/* =========================================================
+   Tables (Ledger)
+   ========================================================= */
+.ledger{
+  overflow-x:auto;
+  border:1px solid var(--line);
+  border-radius:8px;
+  margin:14px 0 20px;
+}
+.ledger table{ width:100%; border-collapse:collapse; font-size:14px; }
+.ledger th{
+  background:var(--ink); color:var(--amber);
+  font-family:var(--font-mono); font-size:11.5px;
+  letter-spacing:.05em; text-transform:uppercase;
+  text-align:left; padding:12px 14px;
+}
+.ledger td{
+  padding:11px 14px;
+  border-bottom:1px solid var(--line);
+  background:var(--paper-2);
+  color:var(--text);
+}
+.ledger tr:last-child td{ border-bottom:none; }
+.ledger td:first-child{
+  font-family:var(--font-mono);
+  color:var(--brick-deep);
+  font-weight:600;
+}
+
+/* =========================================================
+   Section 5.0: Internship Experience
+   ========================================================= */
+.report-cta-box{
+  background:linear-gradient(135deg, var(--ink-2) 0%, var(--ink-3) 100%);
+  border:2px solid var(--amber);
+  border-radius:12px;
+  padding:28px 32px;
+  margin-bottom:36px;
+  display:flex; flex-wrap:wrap;
+  justify-content:space-between; align-items:center;
+  gap:20px;
+}
+.report-cta-text h3{
+  font-size:22px; color:#fff; margin-bottom:6px;
+}
+.report-cta-text p{
+  font-size:14.8px; color:#D7DED6; max-width:650px;
+}
+
+.kpi-strip{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:18px;
+  margin-bottom:34px;
+}
+.kpi-card{
+  background:var(--ink-2);
+  border:1px solid var(--line-dark);
+  border-radius:10px;
+  padding:24px 20px;
+  text-align:center;
+}
+.kpi-card i{ font-size:26px; color:var(--amber); margin-bottom:10px; }
+.kpi-card h3{ font-size:32px; color:#fff; margin-bottom:4px; }
+.kpi-card p{ font-size:13.5px; color:#C4CEC0; text-align:center; }
+
+.intern-overview-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin-bottom:24px;
+}
+.intern-card{
+  background:var(--ink-2);
+  border:1px solid var(--line-dark);
+  border-radius:10px;
+  padding:26px 28px;
+}
+.intern-card.full-width{ grid-column:1 / -1; }
+.intern-card h3{
+  font-size:18px; color:var(--amber);
+  margin-bottom:12px;
+  display:flex; align-items:center; gap:9px;
+}
+.intern-card p{
+  font-size:14.8px; color:#D7DED6; line-height:1.7; margin-bottom:10px;
+}
+.intern-card p:last-child{ margin-bottom:0; }
+
+/* =========================================================
+   Weekly Logbook (Weeks 1–13)
+   ========================================================= */
+.log-controls{
+  display:flex; flex-wrap:wrap; justify-content:space-between;
+  align-items:center; gap:12px;
+  margin-bottom:24px;
+}
+.filter-tabs{
+  display:flex; flex-wrap:wrap; gap:8px;
+}
+.filter-btn{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  color:var(--text);
+  font-family:var(--font-mono);
+  font-size:12px; font-weight:600;
+  padding:8px 14px; border-radius:20px;
+  cursor:pointer; transition:.2s;
+}
+.filter-btn:hover{ border-color:var(--ink); }
+.filter-btn.active{
+  background:var(--ink); color:var(--amber); border-color:var(--ink);
+}
+
+.toggle-all-wrap{ display:flex; gap:8px; }
+.small-btn{
+  background:#fff; border:1px solid var(--line);
+  color:var(--ink); font-family:var(--font-mono);
+  font-size:12px; padding:7px 12px; border-radius:6px;
+  cursor:pointer;
+}
+.small-btn:hover{ background:var(--amber); border-color:var(--amber); }
+
+.week-list{
+  display:flex; flex-direction:column; gap:16px;
+}
+.week-card{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-left:4px solid var(--ink);
+  border-radius:10px;
+  overflow:hidden;
+}
+.week-card.hidden{ display:none; }
+.week-header{
+  padding:18px 24px;
+  background:#fff;
+  cursor:pointer;
+  display:flex; justify-content:space-between; align-items:center;
+  gap:14px; user-select:none;
+}
+.week-header:hover{ background:#FBFBF8; }
+.week-title-wrap{
+  display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+}
+.week-badge{
+  font-family:var(--font-mono);
+  font-size:12px; font-weight:600;
+  background:var(--brick); color:#fff;
+  padding:4px 10px; border-radius:5px;
+}
+.week-title{
+  font-family:var(--font-display);
+  font-size:17.5px; font-weight:600; color:var(--ink);
+}
+.week-date{
+  font-family:var(--font-mono);
+  font-size:12px; color:var(--text-soft);
+}
+.week-chevron{
+  color:var(--ink); transition:transform .25s;
+}
+.week-card.open .week-chevron{ transform:rotate(180deg); }
+
+.week-body{
+  display:none;
+  padding:22px 24px;
+  border-top:1px solid var(--line);
+}
+.week-card.open .week-body{ display:block; }
+
+.week-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.week-box{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:15px 17px;
+}
+.week-box.span-2{ grid-column:1 / -1; }
+.week-box h4{
+  font-family:var(--font-mono);
+  font-size:11.5px; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--brick-deep);
+  margin-bottom:7px;
+  display:flex; align-items:center; gap:7px;
+}
+.week-box p, .week-box li{
+  font-size:14.2px; color:var(--text); line-height:1.65;
+}
+.week-box ul{ padding-left:0; }
+.week-box li{
+  padding-left:15px; position:relative; margin-bottom:5px;
+}
+.week-box li::before{
+  content:"•"; color:var(--amber-dark);
+  position:absolute; left:0; font-weight:bold;
+}
+
+/* =========================================================
+   Section 6.0: Multimedia Gallery
+   ========================================================= */
+.gallery-subhead{
+  font-family:var(--font-mono);
+  font-size:14px; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--brick-deep);
+  margin:28px 0 16px;
+}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(270px, 1fr));
+  gap:22px;
+}
+.gallery-grid figure{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  padding:12px 12px 16px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.25s;
+}
+.gallery-grid figure:hover{
+  border-color:var(--amber);
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(16,36,31,.09);
+}
+.gallery-grid img{
+  width:100%; height:200px;
+  object-fit:cover; border-radius:4px;
+  margin-bottom:10px;
+  background:#e5e9df;
+}
+.gallery-grid figcaption{
+  font-family:var(--font-mono);
+  font-size:12px; color:var(--text);
+  text-align:center; line-height:1.45;
+}
+
+/* =========================================================
+   Contact & Footer
+   ========================================================= */
+.report-stamp{
+  border:2px dashed var(--brick);
+  border-radius:10px;
+  padding:32px 34px;
+  background:var(--paper-2);
+}
+.report-stamp p{
+  margin-bottom:12px; font-size:15.5px;
+  display:flex; flex-wrap:wrap; gap:8px;
+}
+.report-stamp p:last-child{ margin-bottom:0; }
+.report-stamp span{
+  display:inline-block; width:175px;
+  font-family:var(--font-mono); font-size:12px;
+  font-weight:600; color:var(--brick-deep);
+  text-transform:uppercase; letter-spacing:.04em;
+}
+.report-stamp a{ color:var(--ink); font-weight:600; }
+.report-stamp a:hover{ color:var(--brick); }
+
+footer{
+  background:var(--ink);
+  color:#A8B8AE;
+  text-align:center;
+  padding:28px 20px;
+  font-family:var(--font-mono);
+  font-size:12px;
+}
+footer p{ text-align:center; }
+
+/* =========================================================
+   1-Click PDF Document Modal & Lightbox Modal
+   ========================================================= */
+.modal-backdrop{
+  display:none;
+  position:fixed; inset:0;
+  background:rgba(10,22,19,.88);
+  z-index:2000;
+  padding:20px;
+  align-items:center; justify-content:center;
+}
+.modal-backdrop.active{ display:flex; }
+
+.doc-modal{
+  background:var(--paper-2);
+  width:100%; max-width:1060px; height:90vh;
+  border-radius:10px; overflow:hidden;
+  display:flex; flex-direction:column;
+  border:2px solid var(--amber);
+}
+.doc-modal-bar{
+  background:var(--ink); color:#fff;
+  padding:12px 20px;
+  display:flex; justify-content:space-between; align-items:center;
+  gap:12px; flex-wrap:wrap;
+}
+.doc-modal-title{
+  font-family:var(--font-mono); font-size:13.5px; color:var(--amber);
+}
+.doc-modal-actions{
+  display:flex; gap:10px; align-items:center;
+}
+.doc-modal-frame{
+  flex:1; width:100%; border:none; background:#fff;
+}
+
+.lightbox-box{
+  max-width:94vw; max-height:92vh;
+  display:flex; flex-direction:column; align-items:center; gap:12px;
+}
+.lightbox-box img{
+  max-width:92vw; max-height:80vh;
+  border-radius:6px; border:2px solid var(--amber);
+  background:#fff;
+}
+.lightbox-caption{
+  color:#fff; font-family:var(--font-mono);
+  font-size:13.5px; text-align:center;
+}
+.modal-close-btn{
+  background:var(--brick); color:#fff; border:none;
+  padding:7px 14px; border-radius:5px;
+  font-family:var(--font-mono); font-size:12px;
+  font-weight:600; cursor:pointer;
+}
+.modal-close-btn:hover{ background:#c44939; }
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 960px){
+  nav{ padding:12px 18px; }
+  .nav-links{ order:3; width:100%; overflow-x:auto; padding-bottom:4px; }
+  .brand-coords{ display:none; }
+  .hero-grid{ grid-template-columns:1fr; text-align:center; }
+  .snapshot-card{ max-width:260px; margin:0 auto; }
+  .hero-content h1{ font-size:40px; }
+  .about-layout, .resume-grid, .intern-overview-grid, .week-grid{ grid-template-columns:1fr; }
+  .container{ padding:0 20px; }
+  section{ padding:72px 0; }
+}
