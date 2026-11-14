@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Industrial Training &amp; Decision Science E-Portfolio of Lim Xun Yi (Matric 298160), Universiti Utara Malaysia (SQQXK4946).">
+  <title>Lim Xun Yi | Decision Science &amp; Industrial Training E-Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ================= NAVIGATION ================= -->
+<nav>
+  <a href="#home" class="nav-brand">
+    <svg class="compass" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M20 8 L24 20 L20 32 L16 20 Z" fill="currentColor"/>
+    </svg>
+    <div class="brand-text">
+      <span class="brand-name">LIM XUN YI</span>
+      <span class="brand-coords">MATRIC 298160 &middot; SQQXK4946</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link active" data-section="home">1.0 Home</a></li>
+    <li><a href="#about" class="nav-link" data-section="about">2.0 About</a></li>
+    <li><a href="#career" class="nav-link" data-section="career">3.0 Resume</a></li>
+    <li><a href="#academic" class="nav-link" data-section="academic">4.0 Projects</a></li>
+    <li><a href="#internship" class="nav-link" data-section="internship">5.0 Internship</a></li>
+    <li><a href="#weekly-log" class="nav-link" data-section="weekly-log">Logbook (W1&ndash;13)</a></li>
+    <li><a href="#multimedia" class="nav-link" data-section="multimedia">6.0 Gallery</a></li>
+    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <a href="assets/Practicum_Report_Lim_Xun_Yi_298160.pdf" target="_blank" rel="noopener" class="nav-report-btn" title="Open Full Practicum Report PDF in 1 Click">
+      <i class="fa-solid fa-file-pdf"></i> Practicum Report
+    </a>
+    <div class="text-size-controls" role="group" aria-label="Adjust text size">
+      <button type="button" id="decreaseText" aria-label="Decrease text size">A&minus;</button>
+      <button type="button" id="resetText" aria-label="Reset text size">A</button>
+      <button type="button" id="increaseText" aria-label="Increase text size">A+</button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- ================= SECTION 1.0: LANDING PAGE (HOME PAGE) ================= -->
+<section id="home" class="hero">
+  <svg class="hero-route" viewBox="0 0 640 220" aria-hidden="true" preserveAspectRatio="none">
+    <path d="M10,180 C120,60 200,200 320,90 S 520,130 630,30" fill="none" stroke="var(--amber)" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/>
+    <circle cx="10" cy="180" r="5" fill="var(--brick)"/>
+    <circle cx="320" cy="90" r="5" fill="var(--brick)"/>
+    <circle cx="630" cy="30" r="6" fill="var(--paper)" stroke="var(--brick)" stroke-width="2"/>
+    <text x="18" y="167" class="route-label">UUM&middot;DS</text>
+    <text x="328" y="78" class="route-label">JABIL&middot;GBC</text>
+    <text x="560" y="20" class="route-label">IMPACT</text>
+  </svg>
+
+  <div class="container">
+    <div class="hero-grid">
+      <div class="snapshot-card">
+        <div class="snapshot-photo-wrap">
+          <img src="images/profile.jpeg" alt="Professional headshot of Lim Xun Yi">
+        </div>
+        <div class="snapshot-meta">LIM XUN YI &middot; 298160</div>
+        <div class="snapshot-sub">B.Sc. (Hons) Decision Science &middot; UUM</div>
+      </div>
+
+      <div class="hero-content">
+        <h4>SECTION 1.0 &middot; PROFILE SNAPSHOT</h4>
+        <h1>Lim Xun Yi</h1>
+        <p class="hero-degree">Bachelor of Science with Honours (Decision Science) &middot; Minor in Information Management<br>Universiti Utara Malaysia (UUM)</p>
+        <div class="hero-tagline">
+          &ldquo;Decision Science Graduate turning complex data into strategic decisions&rdquo;
+        </div>
+        <p class="hero-desc">
+          Welcome to my SQQXK4946 Industrial Training &amp; Academic E-Portfolio. Explore my 13-week Buyer internship experience at Jabil Sdn. Bhd. (Bayan Lepas), my 3-Page Power BI Executive Control Tower Decision Support System, and three signature quantitative analytics projects.
+        </p>
+
+        <div class="btn-group">
+          <a href="assets/Practicum_Report_Lim_Xun_Yi_298160.pdf" target="_blank" rel="noopener" class="button">
+            <i class="fa-solid fa-file-pdf"></i> View Practicum Report (1-Click PDF)
+          </a>
+          <button type="button" class="button-outline" onclick="openDocModal('assets/Practicum_Report_Lim_Xun_Yi_298160.pdf', 'Practicum Report — Analysis of Shipment Delay Patterns (Lim Xun Yi, 298160)')">
+            <i class="fa-solid fa-eye"></i> Quick Preview Report
+          </button>
+          <a href="assets/Resume_Lim_Xun_Yi.pdf" target="_blank" rel="noopener" class="button-outline">
+            <i class="fa-solid fa-id-card"></i> View Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 2.0: ABOUT ME ================= -->
+<section id="about">
+  <div class="container">
+    <p class="field-tag">SECTION 2.0 &mdash; ABOUT ME</p>
+    <h2>Personal Statement &amp; Elevator Pitch</h2>
+    <p class="section-subtitle">A concise introduction to my analytical background, technical toolkit, and career vision.</p>
+
+    <div class="about-layout">
+      <div class="pitch-card">
+        <div class="pitch-header">
+          <h3><i class="fa-solid fa-compass"></i> Elevator Pitch</h3>
+          <span class="badge-pill">DECISION SCIENCE &middot; CGPA 3.70</span>
+        </div>
+        <p class="pitch-text">
+          I am a final-year Bachelor of Science with Honours (Decision Science) student at Universiti Utara Malaysia (CGPA 3.70) with hands-on Buyer internship experience in Global Centralized Procurement at Jabil Sdn. Bhd. My core strengths lie in metaheuristic optimization, supply chain analytics, and interactive business intelligence. Across my academic and industry work, I have engineered a Discrete Red Deer Algorithm in Python to solve multi-day routing problems and built a 3-page Power BI Executive Control Tower analyzing 424 air freight shipments using DAX, Power Query, and SAP ERP data. Combined with leadership experience as President and Coach of the UUM Wushu Society, I excel at translating complex quantitative models into clear, actionable business strategies that drive operational efficiency.
+        </p>
+      </div>
+
+      <div class="about-side-cards">
+        <div class="info-box">
+          <h3><i class="fa-solid fa-bullseye"></i> Career Aspirations</h3>
+          <p>
+            I aspire to build a career as a <strong>Data Analyst</strong>, <strong>Supply Chain Analyst</strong>, or <strong>Operations Research Analyst</strong>, applying predictive modelling, ERP analytics, and optimization to solve real-world logistics and business bottlenecks. Longer term, I aim to pursue postgraduate research in Artificial Intelligence or Operations Research.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3><i class="fa-solid fa-layer-group"></i> Core Focus Areas</h3>
+          <ul class="chip-list">
+            <li>Supply Chain &amp; Procurement Analytics</li>
+            <li>Power BI &amp; DAX Dashboards</li>
+            <li>Python &amp; Metaheuristics</li>
+            <li>SAP ERP (MD04 / PR / PO)</li>
+            <li>Excel VBA Automation</li>
+            <li>Financial Modelling (NPV/IRR)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 3.0: CAREER PROFILE (RESUME) ================= -->
+<section id="career" class="dark-section">
+  <div class="container">
+    <p class="field-tag light">SECTION 3.0 &mdash; CAREER PROFILE</p>
+    <h2 class="on-dark">Curriculum Vitae &amp; Competency Profile</h2>
+    <p class="section-subtitle on-dark">Structured overview of my education, industry experience, five-pillar skill matrix, certifications, and leadership achievements.</p>
+
+    <div class="resume-banner">
+      <div class="resume-contact-list">
+        <span><i class="fa-solid fa-phone"></i> 016-5317369</span>
+        <a href="mailto:limxunyi0653@gmail.com"><i class="fa-solid fa-envelope"></i> limxunyi0653@gmail.com</a>
+        <span><i class="fa-solid fa-location-dot"></i> Bayan Lepas, Pulau Pinang</span>
+        <a href="https://limxy-yu.github.io/E-portfolio/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> limxy-yu.github.io/E-portfolio</a>
+      </div>
+      <div class="btn-group">
+        <a href="assets/Resume_Lim_Xun_Yi.pdf" target="_blank" rel="noopener" class="button">
+          <i class="fa-solid fa-file-arrow-down"></i> Open / Download Resume (PDF)
+        </a>
+        <button type="button" class="button-outline" onclick="openDocModal('assets/Resume_Lim_Xun_Yi.pdf', 'Curriculum Vitae — Lim Xun Yi')">
+          <i class="fa-solid fa-eye"></i> Preview Resume
+        </button>
+      </div>
+    </div>
+
+    <div class="resume-grid">
+      <!-- Education & Certifications -->
+      <div class="resume-card">
+        <h3><i class="fa-solid fa-graduation-cap"></i> Education &amp; Professional Development</h3>
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-role">Bachelor of Science with Honours (Decision Science)</span>
+            <span class="exp-date">2023 &ndash; 2026</span>
+          </div>
+          <div class="exp-org">Universiti Utara Malaysia (UUM) &middot; Minor: Information Management</div>
+          <ul class="exp-bullets">
+            <li><strong>Academic Standing:</strong> CGPA 3.70 (Latest)</li>
+            <li><strong>Core Coursework:</strong> Operations Research, Computer Aided Decision Analysis (SQITK3053), Mathematical Modelling, Database Management (SQL/Access), Data Visualization, Statistical Forecasting.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-role">Certifications &amp; Workshops</span>
+            <span class="exp-date">2026</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>Enterprise Supply Chain &amp; Compliance:</strong> RapidResponse (RR) End-User Training, EHS &amp; IT Information Security Certification (Jabil GBC, 2026).</li>
+            <li><strong>Technical Analytics:</strong> Python Technical Skill-Building Workshop (2026) &amp; Excel Hackathon 2026 (Silambam Society UUM).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="resume-card">
+        <h3><i class="fa-solid fa-briefcase"></i> Work &amp; Internship Experience</h3>
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-role">Buyer (Intern) &mdash; Global Centralized Procurement</span>
+            <span class="exp-date">Aug 2026 &ndash; Nov 2026</span>
+          </div>
+          <div class="exp-org">Jabil Global Business Center (Jabil GBC), Bayan Lepas, Penang</div>
+          <ul class="exp-bullets">
+            <li>Managed ~200 active electronic component part numbers in SAP and Excel supporting Jabil Wuxi production lines.</li>
+            <li>Executed weekly C-Parts PR releases, Block 1/2/3 PO releases, KTE shortage analysis, Hot Part escalations, and Early Warning allocation tracking.</li>
+            <li>Analyzed 424 inbound AWB records and built a 3-Page Power BI Executive Control Tower Dashboard DSS, identifying 64.17% supplier lag concentration.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-role">Substitute Teacher (Primary School)</span>
+            <span class="exp-date">Jun 2023 &ndash; Sep 2023</span>
+          </div>
+          <div class="exp-org">SJK (C) Chong Cheng, Penang</div>
+          <ul class="exp-bullets">
+            <li>Delivered structured Mathematics and English lessons to classes of 30+ students, adapting instruction across proficiency tiers.</li>
+            <li>Tracked student assessment scores in Excel, identifying 5 students needing targeted academic intervention.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Leadership & Co-Curricular -->
+      <div class="resume-card full-width">
+        <h3><i class="fa-solid fa-trophy"></i> Leadership &amp; Co-Curricular Achievements</h3>
+        <div class="resume-grid">
+          <div class="exp-item" style="border-bottom:none; padding-bottom:0; margin-bottom:0;">
+            <div class="exp-top">
+              <span class="exp-role">President of UUM Wushu Society</span>
+              <span class="exp-date">2025 &ndash; 2026</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Led a 9-member executive committee, setting annual strategic goals and restructuring weekly training operations.</li>
+              <li>Revived post-pandemic club membership by launching a targeted hybrid recruitment campaign.</li>
+            </ul>
+          </div>
+          <div class="exp-item" style="border-bottom:none; padding-bottom:0; margin-bottom:0;">
+            <div class="exp-top">
+              <span class="exp-role">Coach of UUM Wushu Society</span>
+              <span class="exp-date">2023 &ndash; 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Designed and coached Northern Wushu programmes for 20+ students per semester across beginner, intermediate, and advanced tiers.</li>
+              <li>Reduced student drop-out rates within one academic year through monthly skill evaluations and personalized feedback.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5-Category Skills Matrix -->
+      <div class="resume-card full-width">
+        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Comprehensive Skills Matrix</h3>
+        <div class="skills-matrix">
+          <div class="skill-cat">
+            <h4>1. Quantitative Skills</h4>
+            <p>Metaheuristic Optimization, Mathematical Modelling, Pareto (80/20) &amp; Root-Cause Analysis, Capital Budgeting (NPV, IRR, Payback, PI), Goal Seek Sensitivity.</p>
+          </div>
+          <div class="skill-cat">
+            <h4>2. Digital &amp; Tech Skills</h4>
+            <p>Python, SQL, Power BI (DAX &amp; Power Query M), Tableau, SAP ERP (MD04, Info Record, Material Master, PR/PO), Microsoft Excel (VBA Macros, Pivot Tables, VLOOKUP), MS Access.</p>
+          </div>
+          <div class="skill-cat">
+            <h4>3. Business Skills</h4>
+            <p>Global Procurement &amp; Supply Chain Management, Material Requirements Planning (MRP), Excess Inventory Governance, SLA &amp; Vendor Risk Analysis.</p>
+          </div>
+          <div class="skill-cat">
+            <h4>4. Transferable Skills</h4>
+            <p>Cross-Functional Stakeholder Coordination (Planners, IQA, Logistics, Distributors), Analytical Problem-Solving, Technical Report Writing, Team Leadership.</p>
+          </div>
+          <div class="skill-cat">
+            <h4>5. Languages</h4>
+            <p>English (Proficient &mdash; Spoken &amp; Written), Mandarin (Native / Proficient), Bahasa Melayu (Proficient &mdash; Spoken &amp; Written), Hokkien (Spoken).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 4.0: ACADEMIC JOURNEY (SIGNATURE WORK SHOWCASE) ================= -->
+<section id="academic">
+  <div class="container">
+    <p class="field-tag">SECTION 4.0 &mdash; ACADEMIC JOURNEY</p>
+    <h2>Signature Work Showcase</h2>
+    <p class="section-subtitle">Three flagship analytical and decision-support outputs developed across my undergraduate studies and industrial training, complete with viewable artifacts, methodology, outcomes, and reflections.</p>
+
+    <div class="work-stack">
+
+      <!-- SIGNATURE WORK 1: FYP -->
+      <article class="work-card">
+        <div class="work-header">
+          <div>
+            <span class="work-num">Signature Output 01 &middot; Final Year Project (FYP)</span>
+            <h3>Discrete Red Deer Algorithm for Solving the Orienteering Problem with Hotel Selection (OPHS)</h3>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="button-dark" onclick="openLightbox('images/poster.png', 'Final Year Project Poster — Discrete Red Deer Algorithm for OPHS')">
+              <i class="fa-solid fa-image"></i> View FYP Poster
+            </button>
+          </div>
+        </div>
+
+        <div class="work-meta-grid">
+          <div class="work-field">
+            <span class="work-field-label">Format</span>
+            <p>Research Thesis, Academic Conference Poster (<code>poster.png</code>), Python Optimization Engine, and Route Visualization Maps.</p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Role</span>
+            <p>Lead Independent Researcher (Supervised by Prof. Madya Dr. Aida Mauziah Binti Benjamin) &mdash; formulated discrete solution encoding, feasibility repair operators, parameter experiments, and benchmark evaluations.</p>
+          </div>
+          <div class="work-field wide">
+            <span class="work-field-label">Project Summary</span>
+            <p>
+              The Orienteering Problem with Hotel Selection (OPHS) is an NP-hard multi-day routing problem that maximizes collected rewards across Points of Interest (POIs) while strictly satisfying daily trip distance limits and inter-hotel connectivity constraints. While metaheuristics such as GRASP and Ant Colony System have been studied, the Red Deer Algorithm (RDA) had not yet been adapted to OPHS. This study engineered a discrete RDA framework in Python incorporating roaring, commander fighting, harem mating, custom feasibility repair operators, and local search, benchmarking performance across 60 standard SET1 instances.
+            </p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Skills / Tools Used</span>
+            <p>Python, Metaheuristic Algorithm Design, Operations Research, Feasibility Repair &amp; Local Search, Tableau, Excel Statistical Benchmarking.</p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Outcome / Impact</span>
+            <p>Achieved <strong>100% feasible solutions</strong> across all 60 SET1 benchmark instances, attaining an average optimality gap of just <strong>0.08% on SET1 3&ndash;4</strong> and matching exact known optimum scores on instances <code>100-30-3-4</code>, <code>102-50-3-4</code>, and <code>T3-105-3-4</code>.</p>
+          </div>
+          <div class="work-field wide">
+            <span class="work-field-label">Reflection</span>
+            <p>
+              Translating a continuous biological metaheuristic into a discrete routing algorithm taught me that solution representation and constraint repair are just as decisive as search operators. Early prototypes violated hotel connectivity rules, which I overcame by designing a dedicated two-stage feasibility repair function and systematically logging parameter sensitivity trials. This experience directly strengthened my algorithmic problem-solving and Python engineering skills for complex logistics optimization roles.
+            </p>
+          </div>
+        </div>
+
+        <div class="work-thumbs">
+          <div class="thumb-card" onclick="openLightbox('images/poster.png', 'FYP Research Poster — Discrete Red Deer Algorithm for OPHS')">
+            <img src="images/poster.png" alt="FYP Poster">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Research Poster</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/route.png', 'OPHS Multi-Day Route Visualization (SET1 3-4 Instance T1-70-3-4)')">
+            <img src="images/route.png" alt="OPHS Route Visualization">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Route Visualization</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/python.png', 'Python Implementation of Discrete Red Deer Algorithm')">
+            <img src="images/python.png" alt="Python Implementation Screenshot">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Python Algorithm Code</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/result.png', 'Benchmark Optimality Gap Comparison Results')">
+            <img src="images/result.png" alt="Benchmark Results Screenshot">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Benchmark Results</span>
+          </div>
+        </div>
+
+        <details class="fyp-details">
+          <summary>
+            <span><i class="fa-solid fa-sliders"></i> Expand Full FYP Technical Specifications, 10-Step Workflow &amp; Benchmark Tables</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <div class="mini-grid-3">
+            <div class="mini-box">
+              <h4>Dataset SET1 1&ndash;2</h4>
+              <p>20 instances &middot; 3 hotels (1 extra) &middot; 2 trips &middot; Avg Gap: <strong>4.03%</strong> (100% feasible)</p>
+            </div>
+            <div class="mini-box">
+              <h4>Dataset SET1 2&ndash;3</h4>
+              <p>20 instances &middot; 4 hotels (2 extra) &middot; 3 trips &middot; Avg Gap: <strong>3.34%</strong> (100% feasible)</p>
+            </div>
+            <div class="mini-box">
+              <h4>Dataset SET1 3&ndash;4</h4>
+              <p>20 instances &middot; 5 hotels (3 extra) &middot; 4 trips &middot; Avg Gap: <strong>0.08%</strong> (100% feasible)</p>
+            </div>
+          </div>
+
+          <p style="font-size:14px; margin-bottom:10px;"><strong>10-Step Discrete RDA Workflow:</strong> (1) Generate Initial Feasible Population &rarr; (2) Roaring Male RDs &rarr; (3) Select Top &gamma;=0.30 Male Commanders &rarr; (4) Stag Fighting &rarr; (5) Harem Formation &rarr; (6) Mating (7:3 POI Inheritance + 30% Mutation) &rarr; (7) Feasibility Checking &amp; Repair &rarr; (8) Local Search (10 attempts) &rarr; (9) Next Generation Selection (Pop=100, Max Iter=200) &rarr; (10) Best Feasible Tour Output.</p>
+
+          <div class="ledger">
+            <table>
+              <thead>
+                <tr><th>SET1 3&ndash;4 Instance</th><th>Benchmark Optimum</th><th>Discrete RDA Score</th><th>Optimality Gap (%)</th><th>Visited POIs</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>100-30-3-4</td><td>173</td><td>173</td><td>0.00%</td><td>10</td></tr>
+                <tr><td>102-50-3-4</td><td>181</td><td>181</td><td>0.00%</td><td>8</td></tr>
+                <tr><td>T3-90-3-4</td><td>770</td><td>760</td><td>1.30%</td><td>27</td></tr>
+                <tr><td>T3-100-3-4</td><td>800</td><td>770</td><td>3.75%</td><td>28</td></tr>
+                <tr><td>T3-105-3-4</td><td>800</td><td>800</td><td>0.00%</td><td>31</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </article>
+
+      <!-- SIGNATURE WORK 2: SQITK3053 CADA -->
+      <article class="work-card">
+        <div class="work-header">
+          <div>
+            <span class="work-num">Signature Output 02 &middot; SQITK3053 Computer Aided Decision Analysis</span>
+            <h3>Excel-Based Decision Support System for Evaluating Nestl&eacute; Malaysia&rsquo;s Smart Snack Bar Launch Strategies</h3>
+          </div>
+          <div class="btn-group">
+            <a href="assets/SQITK3053_CADA_Group3_Report.pdf" target="_blank" rel="noopener" class="button-dark">
+              <i class="fa-solid fa-file-pdf"></i> View Report (1-Click PDF)
+            </a>
+            <button type="button" class="button-paper" onclick="openDocModal('assets/SQITK3053_CADA_Group3_Report.pdf', 'SQITK3053 Group Project Report — Nestlé Malaysia DSS')">
+              <i class="fa-solid fa-eye"></i> Quick Preview
+            </button>
+          </div>
+        </div>
+
+        <div class="work-meta-grid">
+          <div class="work-field">
+            <span class="work-field-label">Format</span>
+            <p>Interactive Macro-Enabled Excel Decision Support System (<code>.xlsm</code>) &amp; Technical Financial Report (PDF).</p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Role</span>
+            <p>Financial Modeller &amp; VBA Dashboard Developer (Group 3, Matric 298160) &mdash; built automated 5-year pro-forma cash flow models, Goal Seek sensitivity modules, NPV/IRR capital budgeting tables, and VBA navigation controls.</p>
+          </div>
+          <div class="work-field wide">
+            <span class="work-field-label">Project Summary</span>
+            <p>
+              To support Nestl&eacute; Malaysia&rsquo;s market entry into health-conscious plant-based snack and oat-based products, our team engineered a five-year (2025&ndash;2029) Excel-based Decision Support System comparing two commercial launch strategies: a low-cost mass-market <strong>Basic Strategy</strong> (RM2.00 unit price, RM0.80 variable cost, RM50,000 annual fixed cost) versus a targeted high-margin <strong>Premium Strategy</strong> (RM5.00 unit price, RM2.50 variable cost, RM100,000 annual fixed cost). The DSS automates 20% annual sales growth projections, Year-3 Goal Seek breakeven pricing for a RM100,000 profit target, capital budgeting at an 8% hurdle rate, and one-click VBA dashboard filtering.
+            </p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Skills / Tools Used</span>
+            <p>Microsoft Excel (VBA Macros, Goal Seek, Dynamic KPI Charts), Capital Budgeting (NPV, IRR, Payback Period, Profitability Index), Cost-Benefit Analysis.</p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Outcome / Impact</span>
+            <p>Proved that the <strong>Premium Strategy</strong> dominates across every financial metric: <strong>RM430,200</strong> 5-year profit (vs. RM196,496 Basic), <strong>RM57,462.98 NPV</strong> (vs. RM10,607.53), <strong>14.01% IRR</strong> (vs. 10.03%), and faster <strong>3.95-year payback</strong> (vs. 4.14 years).</p>
+          </div>
+          <div class="work-field wide">
+            <span class="work-field-label">Reflection</span>
+            <p>
+              This project demonstrated how integrating financial evaluation frameworks with user-friendly VBA buttons transforms raw spreadsheets into executive decision-support tools. Our main challenge was keeping dynamic charts and cross-sheet Goal Seek links synchronized without breaking macro references, which we solved through structured cell naming and reset macros. This directly prepared me for building automated Excel macros during my Jabil procurement internship.
+            </p>
+          </div>
+        </div>
+
+        <div class="ledger">
+          <table>
+            <thead>
+              <tr><th>Financial Evaluation Metric (5-Year Horizon)</th><th>Basic Strategy</th><th>Premium Strategy (Recommended)</th><th>Strategic Advantage</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>5-Year Total Net Profit</td><td>RM196,496.00</td><td>RM430,200.00</td><td>+RM233,704.00 (+118.9%)</td></tr>
+              <tr><td>Goal Seek Price (Year 3 RM100k Target)</td><td>RM2.88 (from RM2.00, +44%)</td><td>RM5.28 (from RM5.00, +5.6%)</td><td>Lower price sensitivity</td></tr>
+              <tr><td>Net Present Value (NPV @ 8% Hurdle)</td><td>RM10,607.53</td><td>RM57,462.98</td><td>+RM46,855.45 higher value</td></tr>
+              <tr><td>Internal Rate of Return (IRR)</td><td>10.03%</td><td>14.01%</td><td>+6.01% above 8% hurdle</td></tr>
+              <tr><td>Payback Period &amp; Profitability Index</td><td>4.14 years (PI: 1.07)</td><td>3.95 years (PI: 1.22)</td><td>Faster capital recovery</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="work-thumbs">
+          <div class="thumb-card" onclick="openLightbox('images/nestle_dss_basic.png', 'Nestlé Smart Snack Bar Excel DSS — Basic Strategy View (2025–2029 Profit &amp; Goal Seek RM2.88)')">
+            <img src="images/nestle_dss_basic.png" alt="Nestlé Excel DSS Dashboard — Basic Strategy">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Dashboard: Basic Strategy</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/nestle_dss_premium.png', 'Nestlé Smart Snack Bar Excel DSS — Premium Strategy View (2025–2029 Profit &amp; Goal Seek RM5.28)')">
+            <img src="images/nestle_dss_premium.png" alt="Nestlé Excel DSS Dashboard — Premium Strategy">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Dashboard: Premium Strategy</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/nestle_dss_comparison.png', 'Nestlé Smart Snack Bar Excel DSS — Side-by-Side Basic vs. Premium Comparison')">
+            <img src="images/nestle_dss_comparison.png" alt="Nestlé Excel DSS Dashboard — Basic vs Premium Comparison">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Basic vs. Premium Comparison</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/nestle_dss_recommendation.png', 'Nestlé Smart Snack Bar Excel DSS — VBA Executive Recommendation &amp; Capital Budgeting Sheet')">
+            <img src="images/nestle_dss_recommendation.png" alt="Nestlé Excel DSS — Recommendation Sheet">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Recommendation Summary</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- SIGNATURE WORK 3: PRACTICUM POWER BI DSS -->
+      <article class="work-card">
+        <div class="work-header">
+          <div>
+            <span class="work-num">Signature Output 03 &middot; SQQXK4946 Industrial Training Applied Project</span>
+            <h3>Procurement Shipment Delay Root-Cause Analysis &amp; 3-Page Power BI Executive Control Tower DSS</h3>
+          </div>
+          <div class="btn-group">
+            <a href="assets/Practicum_Report_Lim_Xun_Yi_298160.pdf" target="_blank" rel="noopener" class="button-dark">
+              <i class="fa-solid fa-file-pdf"></i> View Practicum Report (1-Click)
+            </a>
+            <button type="button" class="button-paper" onclick="openDocModal('assets/Practicum_Report_Lim_Xun_Yi_298160.pdf', 'Practicum Report — Shipment Delay Patterns & Power BI Control Tower')">
+              <i class="fa-solid fa-eye"></i> Quick Preview
+            </button>
+          </div>
+        </div>
+
+        <div class="work-meta-grid">
+          <div class="work-field">
+            <span class="work-field-label">Format</span>
+            <p>3-Page Interactive Power BI Desktop Control Tower Dashboard (<code>.pbix</code>), Inductive Classification Taxonomy, and Formal Practicum Report (PDF).</p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Role</span>
+            <p>Buyer Intern &amp; Lead Business Intelligence Analyst at Jabil Sdn. Bhd. (Bayan Lepas) &mdash; extracted 424 AWB shipment logs, designed an 8-category delay taxonomy, wrote Power Query M &amp; DAX measures, and built the 3-page dashboard.</p>
+          </div>
+          <div class="work-field wide">
+            <span class="work-field-label">Project Summary</span>
+            <p>
+              Within Jabil&rsquo;s Customer Procurement Operations, qualitative shipment delay reasons were previously recorded as unstructured free-text remarks, preventing root-cause aggregation across origins and forwarders. Analyzing 424 inbound Air Waybill (AWB) shipments from May to August 2026, I developed an inductive 8-category delay taxonomy (CAT-1 to CAT-8) and built a 3-page interactive Power BI Executive Control Tower DSS to evaluate On-Time In-Full (OTIF) reliability, Pareto bottlenecks, temporal deterioration, and forwarder Overtime (OT) cost alignment.
+            </p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Skills / Tools Used</span>
+            <p>Power BI Desktop (DAX Window Functions, Power Query M ETL), Pareto Analysis, Multidimensional Cross-Tabulation, Python Verification, SAP ERP.</p>
+          </div>
+          <div class="work-field">
+            <span class="work-field-label">Outcome / Impact</span>
+            <p>Uncovered a <strong>28.30% overall delay rate</strong> (71.70% OTIF) where <strong>Supplier &amp; Booking Lag accounted for 64.17%</strong> of all delays and <strong>AVNET direct shipments suffered a 96.34% delay rate</strong> (79/82 shipments), while proving 75% of forwarder OT was spent recovering carrier transit delays rather than upstream vendor lag.</p>
+          </div>
+          <div class="work-field wide">
+            <span class="work-field-label">Reflection</span>
+            <p>
+              Converting messy, free-text logistics remarks into a standardized taxonomy taught me how structured data engineering unlocks executive visibility. The biggest challenge was standardizing inconsistent date locales and ambiguous buyer remarks across 424 records, which I resolved through deterministic Power Query M rules and Python cross-validation. This capstone industry project bridges my Decision Science degree directly into enterprise supply chain analytics.
+            </p>
+          </div>
+        </div>
+
+        <div class="work-thumbs">
+          <div class="thumb-card" onclick="openLightbox('images/pbi_page1.png', 'Power BI Control Tower Page 1 — Executive KPIs & Pareto Root Causes')">
+            <img src="images/pbi_page1.png" alt="Power BI Page 1">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Power BI Page 1: Control Tower</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/pbi_page2.png', 'Power BI Control Tower Page 2 — Monthly OTIF Trend & Forwarder OT Analysis')">
+            <img src="images/pbi_page2.png" alt="Power BI Page 2">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Power BI Page 2: Trends &amp; OT Cost</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/pbi_page3.png', 'Power BI Control Tower Page 3 — Strategic Recommendations & Action Matrix')">
+            <img src="images/pbi_page3.png" alt="Power BI Page 3">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Power BI Page 3: Action Matrix</span>
+          </div>
+          <div class="thumb-card" onclick="openLightbox('images/pareto_chart.png', 'Figure 4.1: Pareto Chart of Inbound Shipment Delay Root Causes')">
+            <img src="images/pareto_chart.png" alt="Pareto Chart">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Pareto Root-Cause Chart</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 5.0: INTERNSHIP EXPERIENCE ================= -->
+<section id="internship" class="dark-section">
+  <div class="container">
+    <p class="field-tag light">SECTION 5.0 &mdash; INTERNSHIP EXPERIENCE (SQQXK4946)</p>
+    <h2 class="on-dark">Industrial Training Overview &amp; Analytical Impact</h2>
+    <p class="section-subtitle on-dark">13-week Buyer placement within Global Centralized Procurement &mdash; Customer Procurement Operations at Jabil Sdn. Bhd., Bayan Lepas, Penang (3 August 2026 &ndash; November 2026).</p>
+
+    <!-- 1-CLICK REPORT ACCESS BANNER -->
+    <div class="report-cta-box">
+      <div class="report-cta-text">
+        <h3><i class="fa-solid fa-file-lines" style="color:var(--amber);"></i> Complete Practicum Report (SQQXK4946)</h3>
+        <p>Access the full 41-page Practicum Report (<em>Analysis of Shipment Delay Patterns and Reported Causes in Customer Procurement Operations</em>), including all statistical tables, DAX measures, Power BI screenshots, and Appendices A&ndash;E.</p>
+      </div>
+      <div class="btn-group">
+        <a href="assets/Practicum_Report_Lim_Xun_Yi_298160.pdf" target="_blank" rel="noopener" class="button">
+          <i class="fa-solid fa-up-right-from-square"></i> Open Report in 1-Click (PDF)
+        </a>
+        <button type="button" class="button-outline" onclick="openDocModal('assets/Practicum_Report_Lim_Xun_Yi_298160.pdf', 'SQQXK4946 Practicum Report — Lim Xun Yi (Matric 298160)')">
+          <i class="fa-solid fa-book-open"></i> Read Report On-Page
+        </button>
+      </div>
+    </div>
+
+    <!-- KEY METRICS STRIP -->
+    <div class="kpi-strip">
+      <div class="kpi-card">
+        <i class="fa-solid fa-microchip"></i>
+        <h3>~200</h3>
+        <p>Active Electronic Part Numbers Managed</p>
+      </div>
+      <div class="kpi-card">
+        <i class="fa-solid fa-plane-arrival"></i>
+        <h3>424</h3>
+        <p>Inbound AWB Shipments Analyzed</p>
+      </div>
+      <div class="kpi-card">
+        <i class="fa-solid fa-chart-pie"></i>
+        <h3>64.17%</h3>
+        <p>Delays Driven by Supplier &amp; Booking Lag</p>
+      </div>
+      <div class="kpi-card">
+        <i class="fa-solid fa-gauge-high"></i>
+        <h3>3-Page</h3>
+        <p>Power BI Control Tower DSS Built</p>
+      </div>
+    </div>
+
+    <!-- ORGANIZATION PROFILE, ROLE, RESPONSIBILITIES, ACHIEVEMENTS & SKILLS -->
+    <div class="intern-overview-grid">
+      <div class="intern-card">
+        <h3><i class="fa-solid fa-building"></i> Organization Profile &amp; Departmental Context</h3>
+        <p>
+          <strong>Jabil Inc.</strong> (founded in 1966, headquartered in St. Petersburg, Florida) is a global Electronics Manufacturing Services (EMS) leader operating over 100 sites across 30 countries with 230,000+ employees. Jabil established its Malaysian flagship in <strong>Bayan Lepas, Penang in 1995</strong> (expanding to Batu Kawan in 2015), specializing in telecommunications, enterprise storage, and industrial instrumentation under Just-In-Time (JIT) manufacturing.
+        </p>
+        <p>
+          Embedded within the <strong>Global Centralized Procurement / Customer Procurement Operations</strong> division at Jabil GBC Bayan Lepas, my team managed end-to-end component sourcing, material shortage mitigation, and inbound freight coordination supporting the <strong>Jabil Wuxi</strong> manufacturing site.
+        </p>
+      </div>
+
+      <div class="intern-card">
+        <h3><i class="fa-solid fa-user-tie"></i> Role &amp; Core Buyer Responsibilities</h3>
+        <p>
+          <strong>Position:</strong> Buyer (Intern), Global Centralized Procurement (3 August 2026 &ndash; November 2026).
+        </p>
+        <ul class="exp-bullets">
+          <li><strong>PO &amp; PR Execution:</strong> Released weekly C-Parts Purchase Requisitions (PRs) and Block 1/2/3 Purchase Orders (POs) in SAP, followed by MRP data regeneration.</li>
+          <li><strong>Shortage &amp; Allocation Management:</strong> Compiled weekly KTE shortage reports, daily Hot Part escalations, and Early Warning (EW) distributor allocation tracking (Arrow &amp; Avnet).</li>
+          <li><strong>Quality, Compliance &amp; Cross-Selling:</strong> Audited AMPL approved manufacturer codes, resolved IQA/IQC &amp; B108 baking holds, enforced excess-first stock consumption, and executed inter-site cross-selling shipments (e.g., Jabil India via E-SR &amp; SuSoft).</li>
+        </ul>
+      </div>
+
+      <div class="intern-card">
+        <h3><i class="fa-solid fa-award"></i> Key Contributions &amp; Achievements</h3>
+        <ul class="exp-bullets">
+          <li><strong>Inductive Delay Taxonomy &amp; Power BI DSS:</strong> Standardized 424 free-text shipment logs into 8 mutually exclusive categories and built a 3-page Power BI Executive Control Tower Dashboard.</li>
+          <li><strong>Root-Cause &amp; Cost Governance Insights:</strong> Quantified AVNET&rsquo;s 96.34% delay rate (65.83% of total delays) and demonstrated that 75% of forwarder OT authorizations were utilized for air-transit recovery rather than upstream supplier lag.</li>
+          <li><strong>Workflow Standardization:</strong> Adopted the one-click EW macro and instituted mandatory pre-sorting checks to eliminate Excel downtime calculation errors across 200+ parts.</li>
+        </ul>
+      </div>
+
+      <div class="intern-card">
+        <h3><i class="fa-solid fa-gears"></i> Skills Applied &amp; Gained</h3>
+        <ul class="exp-bullets">
+          <li><strong>Enterprise ERP &amp; Systems:</strong> SAP (MD04, Stock Overview, Info Record maintenance, Material Master MSL updates, PR/PO release), RapidResponse, SuSoft, E-SR, and AMA portal.</li>
+          <li><strong>Data Analytics &amp; Automation:</strong> Power BI Desktop (Power Query M ETL, DAX window functions), Excel VBA Macros, VLOOKUP, and Python data validation.</li>
+          <li><strong>Supply Chain &amp; Stakeholder Skills:</strong> Distributor pull-in negotiation (Arrow, Avnet), 3PL tracking (DHL, Dimerco), and cross-functional alignment with Planners, IQA/IQC, Stores, and Receiving.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 5.2: WEEKLY REPORTS (WEEKS 1-13) ================= -->
+<section id="weekly-log">
+  <div class="container">
+    <p class="field-tag">SECTION 5.2 &mdash; REFLECTIVE WEEKLY LOGBOOK</p>
+    <h2>13-Week Industrial Training Logbook</h2>
+    <p class="section-subtitle">Structured weekly documentation of tasks completed, skills developed, challenges overcome, key insights, and forward-looking goals from Week 1 to Week 13.</p>
+
+    <div class="log-controls">
+      <div class="filter-tabs" role="group" aria-label="Filter weekly logs by internship phase">
+        <button type="button" class="filter-btn active" data-phase="all">All 13 Weeks</button>
+        <button type="button" class="filter-btn" data-phase="phase1">Weeks 1&ndash;4: Onboarding &amp; Core Tools</button>
+        <button type="button" class="filter-btn" data-phase="phase2">Weeks 5&ndash;9: Independent Ownership</button>
+        <button type="button" class="filter-btn" data-phase="phase3">Weeks 10&ndash;13: Quality &amp; Mastery</button>
+      </div>
+      <div class="toggle-all-wrap">
+        <button type="button" id="expandAllWeeks" class="small-btn"><i class="fa-solid fa-angles-down"></i> Expand All</button>
+        <button type="button" id="collapseAllWeeks" class="small-btn"><i class="fa-solid fa-angles-up"></i> Collapse All</button>
+      </div>
+    </div>
+
+    <div class="week-list">
+      
+    <article class="week-card open" data-phase="phase1">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="true">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 01</span>
+          <span class="week-title">Onboarding, EHS/IT Security & RapidResponse Introduction</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 3 August 2026 – 7 August 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Attended Jabil internship orientation, configured corporate IT accounts, and toured the Jabil Global Business Center (GBC) Bayan Lepas office.</li>
+<li>Completed Environmental, Health & Safety (EHS) and IT Information Security compliance trainings.</li>
+<li>Met department manager and assigned buddy (JoYee) to understand GBC (IMCA) structure and buyer workflows.</li>
+<li>Initiated RapidResponse (RR) enterprise supply chain training courses and submitted system access requests.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>Enterprise ERP navigation (RapidResponse), Information Security & Data Governance, Corporate Communication, Structured Note-Taking.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Understood how an integrated global supply chain system connects planning, procurement, and operations, as well as strict adherence to corporate compliance policies.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Adapting rapidly to unfamiliar enterprise systems and misinterpreting medical leave documentation rules (timeslip vs. official Medical Certificate).<br><strong>Resolution:</strong> Immediately notified manager transparently, logged unpaid leave per HR policy, and compiled a structured onboarding checklist with buddy JoYee.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Finalize remaining system access approvals and begin shadowing weekly buyer routines for the Wuxi manufacturing site.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase1">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 02</span>
+          <span class="week-title">Buyer Weekly Routine, Backlog Macros & SAP PO Monitoring</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 10 August 2026 – 13 August 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Consulted company supervisor to scope the Practicum Project ('PO / Shipment Delay Analysis') and corporate data confidentiality rules.</li>
+<li>Learned end-to-end weekly buyer routines supporting Jabil Wuxi: C-Parts release, KTE shortage calculations, PO release, ETA updates, and Auto Planning uploads.</li>
+<li>Operated manager-built Excel Backlog Shipment and KTE Calculation/Feedback macros, applying +3-day transit buffer rules.</li>
+<li>Used SAP and Excel VLOOKUP to verify PO receipt status, IQA inspection queues, and stock-in progress.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>SAP ERP (PO & Stock Status), Excel Automation Macros & VLOOKUP, Lead-Time & Buffer Estimation, Data Confidentiality.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Observed firsthand how Excel VBA macros eliminate manual repetitive tasks and how buffer days protect production lines against transit variability.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Absorbing high volumes of supply chain terminology, cross-departmental interfaces (Planners, IQA, Stores, Forwarders), and multiple report formats simultaneously.<br><strong>Resolution:</strong> Documented step-by-step workflow diagrams during shadowing sessions and practiced macro execution on sample datasets.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Perform supervised hands-on KTE calculations and cross-system inventory verification on buddy's assigned part numbers.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase1">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 03</span>
+          <span class="week-title">Hands-On KTE Shortage Calculations & Cross-System Validation</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 17 August 2026 – 21 August 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Executed supervised KTE shortage calculations and reviewed material pull-in requirements using buddy's assigned part portfolio.</li>
+<li>Cross-checked discrepancies between KTE report stock figures, SAP inventory screens, and shared-drive inter-location transfer logs.</li>
+<li>Validated open purchase orders against projected manufacturing shortage dates.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>Material Requirements Planning (MRP) / KTE Analysis, SAP Inventory Reconciliation, Data Auditing & Validation.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Discovered that automated report outputs must always be validated against live ERP stock movements before releasing purchase orders.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Reconciling stock quantity mismatches across KTE reports, SAP views, and shared transfer records under complex Standard Operating Procedures (SOPs).<br><strong>Resolution:</strong> Built a personal SOP verification checklist and traced historical examples with buddy JoYee before committing any shortage updates.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Master Monday C-Parts Purchase Requisition (PR) releases and Early Warning (EW) report preparation.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase1">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 04</span>
+          <span class="week-title">C-Parts PR Release Workflow & Early Warning (EW) Macro Reporting</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 24 August 2026 – 28 August 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Filtered Purchase Requisition (PR) schedules by release date, verified duplicate PRs in SAP, obtained planner approvals, and regenerated SAP data post-release.</li>
+<li>Prepared the Early Warning (EW) Report by extracting shared-drive source files, checking allocation parts, and reconciling confirmed vs. unconfirmed POs.</li>
+<li>Executed the automated EW macro to consolidate distributor supply data into submission-ready reports.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>SAP PR Release & Data Regeneration, Early Warning (EW) Allocation Tracking, Macro-Driven Data Consolidation, Planner Coordination.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Learned how post-release SAP regeneration keeps MRP signals synchronized across global planning and purchasing teams.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Coordinating multi-file validation steps across SAP and shared-drive reports without missing duplicate PR checks.<br><strong>Resolution:</strong> Followed a strict pre-release verification sequence and double-checked SAP regeneration logs immediately after Monday C-Parts releases.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Transition to independent ownership of my own assigned component part portfolio starting Week 5.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase2">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 05</span>
+          <span class="week-title">Independent Part Portfolio Ownership, SAP MD04 & Hot Part Escalations</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 31 August 2026 – 4 September 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Took independent ownership of assigned part numbers: released C-Parts, regenerated SAP data, and computed part downtime dates using Excel formulas.</li>
+<li>Prepared the manual Hot Part Report using SAP transaction MD04 and Stock Overview (distinguishing Storage Location 'R' pending stock-in vs. 'Qual. Inspection' pending IQA).</li>
+<li>Submitted Hot Part portal escalations and coordinated with IQC to prioritize parts facing downtime within 24 hours; released Block 2 POs on Thursday.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>SAP Transaction MD04, Stock Overview Diagnostics, Excel Downtime Modelling, Urgent IQC/Receiving Escalation.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Realized that a buyer's accountability extends past PO placement into active receiving, IQA clearance, and proactive downtime prevention.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Juggling multiple urgent 24-hour downtime alerts across KTE and manual Hot Part analyses simultaneously for the first time.<br><strong>Resolution:</strong> Prioritized immediate 24-hour line-stoppage risks each morning before handling routine emails and administrative updates.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Manage supplier backlog pull-ins with Arrow and learn Excess Check decision rules.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase2">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 06</span>
+          <span class="week-title">Backlog Pull-In Negotiation, Excess Inventory Rules & New 1-Click EW Macro</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 7 September 2026 – 11 September 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Escalated a critical backlog shortage to distributor Arrow, securing a split partial shipment to prevent line downtime.</li>
+<li>Applied distinct ETA commitment rules for normal POs (+3-day buffer) versus Arrow backlog orders, and monitored IQC/hold materials.</li>
+<li>Processed Excess Check requests by evaluating open PRs in SAP, batch release limits, and vendor lead times (ENC/Tallinn vs. Flex/EDB).</li>
+<li>Adopted the newly deployed one-click Early Warning (EW) macro for Arrow/Avnet allocation reporting.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>Distributor Pull-In Follow-Up (Arrow/Avnet), Backlog vs. Standard ETA Logic, Excess Inventory Optimization, One-Click EW Macro Execution.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Learned how balancing excess stock consumption against supplier lead times reduces working capital waste while protecting production continuity.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Applying conditional ETA commitment logic where supplier backlog ETAs override internal calculated ETAs only when later than estimated arrival.<br><strong>Resolution:</strong> Created a decision matrix in personal notes comparing calculated ETA vs. Arrow backlog ETA and escalated unconfirmed updates via Microsoft Teams.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Scale operations to manage an expanded ~200-part portfolio and master SAP Info Record price updates.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase2">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 07</span>
+          <span class="week-title">Scaling to ~200 Parts, Allocation Splitting, SAP Info Records & AMPL Compliance</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 14 September 2026 – 18 September 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Scaled portfolio responsibility to ~200 parts (30+ KTE shortage lines) and enforced pre-sorting (ETA oldest-to-newest, Part Number A–Z) to guarantee accurate Excel downtime formulas.</li>
+<li>Updated material pricing in SAP Info Records (IR) following CON Change notices.</li>
+<li>Resolved an urgent allocation shortage (19/09 downtime) via Teams with Arrow—splitting 4,000 confirmed units (24/09 ETA, zero buffer) from 8,000 unconfirmed units and tracking the AWB.</li>
+<li>Executed AMPL (Authorized Material List Process) checks in SAP, verifying Manufacturing Codes (MC=0 prototype vs. MC=3 unapproved).</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>High-Volume Portfolio Prioritization (~200 Parts), SAP Info Record (IR) Maintenance, Allocation Split Modelling, AMPL Compliance Auditing.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Discovered that data hygiene (proper sorting and uncommitted blank fields until AWB/ETA confirmation) is critical for reliable MRP reporting.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Preventing Excel downtime formula errors when KTE line volume tripled overnight and managing partial allocation commitments without over-committing.<br><strong>Resolution:</strong> Standardized mandatory data sorting prior to running downtime formulas and separated confirmed vs. unconfirmed allocation lines in KTE.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Execute pre-holiday shipment pull-ins ahead of the Wuxi Mid-Autumn Festival closure.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase2">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 08</span>
+          <span class="week-title">Mid-Autumn Festival Pre-Holiday Planning & End-to-End AWB Tracking</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 21 September 2026 – 25 September 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Prepared pre-holiday KTE and Hot Part schedules ahead of the Wuxi site Mid-Autumn Festival shutdown (25–27 Sep), filtering priority shipments for 29/09 downtime.</li>
+<li>Verified WIP stock in location B102 and processed high-volume PO revision notifications following Monday releases.</li>
+<li>Tracked split shipments of 4,000 units via DHL and 4,000 expedited units via Dimerco until confirmed physical arrival at Jabil Wuxi on 25 Sep.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>Holiday Shutdown Buffer Planning, WIP Stock Verification (B102), Multi-Forwarder Tracking (DHL/Dimerco), Receiving Expediting.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Understood end-to-end physical logistics visibility—tracking cargo from distributor dispatch through freight forwarder to site receiving and stock-in.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Managing surging PO revisions and uncertain Venlo allocation ETAs during a compressed pre-holiday shipping window.<br><strong>Resolution:</strong> Aligned with supervisor's 29/09 priority cutoff, kept unconfirmed Venlo ETAs blank until finalized, and followed up directly with receiving teams on arrival day.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Prepare inventory buffers ahead of China Golden Week and advance Practicum data analysis.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase2">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 09</span>
+          <span class="week-title">Pre-Golden Week Risk Mitigation, IQA Escalation & Practicum Project Development</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 28 September 2026 – 2 October 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Validated usable B102 inventory for immediate production transfer and reconciled Arrow EW stock shortfalls for three critical parts.</li>
+<li>Highlighted arrived materials pending IQA inspection in the Hot Part Report so IQC could clear stock prior to the China Golden Week shutdown.</li>
+<li>Synchronized KTE ETAs with latest Hot Part updates on Wednesday, and dedicated Golden Week / replacement leave days (1–2 Oct) to logbook organization and Practicum analysis.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>Pre-Shutdown Inventory Synchronization, IQA Bottleneck Escalation, Dataset Structuring for Practicum Analytics.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Learned how proactive pre-holiday IQA clearance prevents artificial stockouts when warehouses operate with skeleton crews.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Working with incomplete planner shortage feeds ahead of Golden Week while ensuring zero pending-IQA parts were stranded over the holiday.<br><strong>Resolution:</strong> Cross-verified available SAP supply against Hot Part alerts and used quieter holiday days systematically to consolidate notes and build the Practicum dataset.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Post-Golden Week recovery, Moisture Sensitivity Level (MSL) QN resolution, and Jabil India cross-selling execution.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase3">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 10</span>
+          <span class="week-title">MSL Quality Notification (QN) Resolution & Cross-Selling Shipment Execution</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 5 October 2026 – 9 October 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Investigated an IQC Unsolved Quality Notification (QN) involving Moisture Sensitivity Level (MSL) mismatch, validating component datasheets and updating SAP Material Master (MM) before routing to the 3E team.</li>
+<li>Checked shared-drive baking logs and consulted engineering on high-temperature baking feasibility for a moisture-sensitive part.</li>
+<li>Executed an end-to-end cross-selling order (4,000 pcs) for Jabil India: uncovered 6,000 pcs of Load Independent Demand (LID) in SAP, verified FCA Wuxi PO terms, and prepared SELQ, SO, E-SR, packing list, COO, and AWB documents.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>SAP Material Master (MSL) Maintenance, Quality Notification (QN) Workflow, Load Independent Demand (LID) Analysis, Inter-Site Cross-Selling & Export Docs.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Gained deep insight into SAP Load Independent Demand (LID) mechanics and international inter-plant logistics documentation (FCA terms, COO, CDF).</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Navigating the multi-departmental cross-selling export workflow (Store, IQA, Shipping, Logistics, Jabil India) and strict MSL compliance rules for the first time.<br><strong>Resolution:</strong> Verified that SAP MSL is only updated upward when physical MSL exceeds system records, and documented every E-SR and customs document step from past templates.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Manage baking commit schedules (B108), air-freight escalations, and pre-PO excess inventory checks.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase3">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 11</span>
+          <span class="week-title">Baking Schedule Commitments, Air-Shipment Escalations & Excess-First PO Governance</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 12 October 2026 – 16 October 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Committed B108 baking completion dates (15/10) in KTE, released Block 1 POs for four Arrow-confirmed parts, and escalated an urgent part for air freight.</li>
+<li>Uploaded synchronized Wednesday KTE reports to the AMA portal on schedule.</li>
+<li>Initiated preliminary cross-selling checks for an allocation part and promptly halted preparation upon Senior Supply Chain Development Manager directive.</li>
+<li>Enforced 'Excess-First' PO governance—checking and consuming usable excess inventory before releasing new POs to Arrow.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>AMA Portal Reporting, Air-Freight Escalation, Agile Compliance with Management Directives, Excess-Before-Buy Governance.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Reinforced the financial discipline of consuming existing excess stock prior to raising new supplier POs and monitoring latent excess for future PR pull-ins.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Balancing rapid preliminary preparation for a potential cross-selling request while remaining agile when management suspended the sale.<br><strong>Resolution:</strong> Completed non-binding stock and document checks early, then cleanly paused execution immediately upon Mindy's instruction.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Handle customs clearance delay communications, inter-site support evaluations, and SuSoft net-weight retrieval.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase3">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 12</span>
+          <span class="week-title">Customs Delay Mitigation, SuSoft Net Weight Retrieval & Venlo AWB Decoding</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 19 October 2026 – 23 October 2026</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Alerted planners immediately with revised ETAs upon detecting a customs clearance delay to enable proactive production rescheduling.</li>
+<li>Evaluated an inter-site material support request against local Wuxi demand and declined the transfer to protect local line continuity.</li>
+<li>Adopted revised cross-selling customs procedures by extracting historical receipt net weights from SuSoft (with ENC Net Weight List fallback).</li>
+<li>Decoded Venlo hub shipment tracking prefixes ('UF' pre-shipment reference vs. finalized 'DIM' Air Waybill numbers) with Arrow.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>Customs Delay Risk Communication, Inter-Site Demand Protection, SuSoft ERP Data Extraction, Forwarder Reference Decoding ('UF' vs. 'DIM').</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Learned how accurate ERP receipt weights (SuSoft) prevent customs declaration holds and how protective inventory checks safeguard local manufacturing.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Distinguishing pre-assigned Venlo 'UF' references from live 'DIM' AWBs so shipments ready for dispatch were not falsely flagged as unshipped.<br><strong>Resolution:</strong> Verified actual dispatch status directly with Arrow and documented the 'UF' -> 'DIM' transition rule in personal reference notes.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Consolidate autonomous buyer operations in the final internship week and finalize Practicum Report & Power BI Control Tower.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="week-card" data-phase="phase3">
+      <div class="week-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="week-title-wrap">
+          <span class="week-badge">Week 13</span>
+          <span class="week-title">Autonomous End-to-End Buyer Execution & Practicum Handover</span>
+          <span class="week-date"><i class="fa-regular fa-calendar"></i> 26 October 2026 – 30 October 2026 (Final Week)</span>
+        </div>
+        <i class="fa-solid fa-chevron-down week-chevron"></i>
+      </div>
+      <div class="week-body">
+        <div class="week-grid">
+          <div class="week-box span-2">
+            <h4><i class="fa-solid fa-list-check"></i> Tasks Completed</h4>
+            <ul><li>Independently executed full weekly procurement cycles across ~200 parts: C-Parts & Block PO releases, KTE and Hot Part reporting, ETA updates, and IQA follow-ups.</li>
+<li>Coordinated seamlessly across planning, purchasing, logistics, IQA, receiving, and distributors (Arrow/Avnet) with minimal supervision.</li>
+<li>Finalized the 424-AWB Shipment Delay Root-Cause Analysis and 3-Page Power BI Executive Control Tower Dashboard for departmental review.</li></ul>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Skills Applied or Developed</h4>
+            <p>Autonomous Supply Chain Execution, Cross-Functional Stakeholder Management, Business Intelligence & Executive Reporting (Power BI).</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-lightbulb"></i> Key Learning / Takeaway / New Insights</h4>
+            <p>Synthesized academic Decision Science training with real-world global procurement operations, proving how structured data analytics transforms reactive expediting into proactive governance.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-triangle-exclamation"></i> Challenges &amp; How Addressed</h4>
+            <p><strong>Challenge:</strong> Maintaining 100% reporting and ETA accuracy across a high-mix ~200-part portfolio while wrapping up final Practicum deliverables.<br><strong>Resolution:</strong> Applied accumulated SOP checklists, automated macros, and daily risk-triage routines built over the 13-week placement.</p>
+          </div>
+          <div class="week-box">
+            <h4><i class="fa-solid fa-forward-step"></i> Next Week's Focus &amp; Planned Improvements</h4>
+            <p>Complete formal Practicum Report submission (SQQXK4946) and graduate ready for Data Analyst / Supply Chain Analyst roles.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 6.0: MULTIMEDIA COMPONENTS ================= -->
+<section id="multimedia">
+  <div class="container">
+    <p class="field-tag">SECTION 6.0 &mdash; MULTIMEDIA &amp; VISUAL EVIDENCE</p>
+    <h2>Dashboards, Charts &amp; Field Documentation</h2>
+    <p class="section-subtitle">High-resolution screenshots of my Power BI Control Tower Decision Support System, statistical analyses, and academic research milestones. Click any visual to inspect in full screen.</p>
+
+    <h3 class="gallery-subhead"><i class="fa-solid fa-chart-column"></i>Part A: Industrial Training Power BI Control Tower, Statistical Charts &amp; Workplace Documentation</h3>
+    <div class="gallery-grid">
+      <figure onclick="openLightbox('images/pbi_page1.png', 'Figure 4.3: Power BI Executive Control Tower Dashboard (Page 1 — KPI Cards, Pareto Chart & Source Matrix)')">
+        <img src="images/pbi_page1.png" alt="Power BI Executive Control Tower Dashboard Page 1">
+        <figcaption>Power BI Control Tower (Page 1): Executive KPIs &amp; Pareto Bottlenecks</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/pbi_page2.png', 'Figure 4.4: Power BI Monthly Trend & Expedited Forwarder OT Cost Analysis Module (Page 2)')">
+        <img src="images/pbi_page2.png" alt="Power BI Monthly Trend and Forwarder OT Analysis Page 2">
+        <figcaption>Power BI Control Tower (Page 2): Monthly OTIF Trends &amp; Forwarder OT Cost</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/pbi_page3.png', 'Figure 4.5: Power BI Strategic Recommendations & Operational Action Matrix (Page 3)')">
+        <img src="images/pbi_page3.png" alt="Power BI Strategic Recommendations Action Matrix Page 3">
+        <figcaption>Power BI Control Tower (Page 3): Strategic Recommendations &amp; SLA Action Matrix</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/pareto_chart.png', 'Figure 4.1: Pareto Chart of Inbound Shipment Delay Root Causes (Supplier Lag = 64.17%)')">
+        <img src="images/pareto_chart.png" alt="Pareto Chart of Inbound Shipment Delay Root Causes">
+        <figcaption>Figure 4.1: Pareto Analysis of Reported Shipment Delay Causes</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/monthly_trend.png', 'Figure 4.2: Monthly Inbound OTIF vs. Target Performance Trend (May – August 2026)')">
+        <img src="images/monthly_trend.png" alt="Monthly Inbound OTIF vs Target Performance Trend">
+        <figcaption>Figure 4.2: Monthly Inbound OTIF Reliability Trend (May&ndash;August 2026)</figcaption>
+      </figure>
+
+      <!-- 4 Jabil Internship Photos -->
+      <figure onclick="openLightbox('images/jabil_1.jpg', 'Global Centralized Procurement Operations at Jabil Global Business Center (GBS@Mayang)')">
+        <img src="images/jabil_1.jpg" alt="Working in Global Centralized Procurement at Jabil GBC">
+        <figcaption>Jabil GBC: Group Photo with Visiting Supervisor &amp; coursemates</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/jabil_2.jpg', 'Customer Procurement Team Collaboration & Cross-Functional Coordination at Jabil')">
+        <img src="images/jabil_2.jpg" alt="Customer Procurement Team at Jabil Bayan Lepas">
+        <figcaption>Jabil GBC: Group Photo with Visiting Supervisor, Supervisor &amp; Manager after presentation</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/jabil_3.jpg', 'Supply Chain & Inbound Shipment Analysis Review at Jabil Penang')">
+        <img src="images/jabil_3.jpg" alt="Supply Chain Data Analysis Session at Jabil">
+        <figcaption>Commiting shortage report at workplace</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="gallery-subhead"><i class="fa-solid fa-flask"></i> Part B: Final Year Project Research Visuals &amp; Academic Presentations</h3>
+    <div class="gallery-grid">
+      <figure onclick="openLightbox('images/poster.png', 'Final Year Project Research Poster — Discrete Red Deer Algorithm for OPHS')">
+        <img src="images/poster.png" alt="Final Year Project poster summarising the OPHS study">
+        <figcaption>Final Year Project Research Poster (OPHS Optimization)</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/route.png', 'Multi-Day Tour Route Visualization for SET1 3-4 Instance T1-70-3-4')">
+        <img src="images/route.png" alt="Route visualization for SET1 3-4 instance T1-70-3-4">
+        <figcaption>Discrete RDA Route Visualization (4 Feasible Hotel-Connected Trips)</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/python.png', 'Python Implementation of Discrete Red Deer Algorithm Operators')">
+        <img src="images/python.png" alt="Screenshot of Python implementation">
+        <figcaption>Python Optimization Engine &amp; Feasibility Repair Implementation</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/result.png', 'Experimental Benchmark Results Comparing Discrete RDA vs. Optimum')">
+        <img src="images/result.png" alt="Screenshot of experimental results">
+        <figcaption>Benchmark Evaluation Results (0.08% Avg Gap on SET1 3&ndash;4)</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/visualization.png', 'Tour Trade-Off & Solution Convergence Visualization')">
+        <img src="images/visualization.png" alt="Visualization of an OPHS solution route">
+        <figcaption>OPHS Solution Space &amp; Tour Convergence Plot</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/meeting.jpeg', 'Academic Supervision Meeting at Universiti Utara Malaysia')">
+        <img src="images/meeting.jpeg" alt="Supervision meeting discussing the Final Year Project">
+        <figcaption>Academic Supervision &amp; Progress Review Session</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/presentation.jpeg', 'Presenting Research Findings at UUM School of Quantitative Sciences')">
+        <img src="images/presentation.jpeg" alt="Presenting the Final Year Project findings">
+        <figcaption>Final Project Presentation &amp; Viva Defense</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="gallery-subhead"><i class="fa-solid fa-table-columns"></i> Part C: SQITK3053 Computer Aided Decision Analysis &mdash; Nestl&eacute; Malaysia Excel DSS</h3>
+    <div class="gallery-grid">
+      <figure onclick="openLightbox('images/nestle_dss_basic.png', 'Nestlé Malaysia Smart Snack Bar DSS — Interactive Dashboard (Basic Strategy Filter)')">
+        <img src="images/nestle_dss_basic.png" alt="Nestlé Smart Snack Bar Excel Dashboard Basic Strategy">
+        <figcaption>Nestl&eacute; Excel DSS Dashboard: Basic Strategy Scenario (2025&ndash;2029)</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/nestle_dss_premium.png', 'Nestlé Malaysia Smart Snack Bar DSS — Interactive Dashboard (Premium Strategy Filter)')">
+        <img src="images/nestle_dss_premium.png" alt="Nestlé Smart Snack Bar Excel Dashboard Premium Strategy">
+        <figcaption>Nestl&eacute; Excel DSS Dashboard: Premium Strategy Scenario (2025&ndash;2029)</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/nestle_dss_comparison.png', 'Nestlé Malaysia Smart Snack Bar DSS — Combined Basic vs. Premium Comparison')">
+        <img src="images/nestle_dss_comparison.png" alt="Nestlé Smart Snack Bar Excel Dashboard Basic vs Premium Comparison">
+        <figcaption>Nestl&eacute; Excel DSS Dashboard: Side-by-Side Strategy Comparison</figcaption>
+      </figure>
+
+      <figure onclick="openLightbox('images/nestle_dss_recommendation.png', 'Nestlé Malaysia Smart Snack Bar DSS — VBA Recommendation &amp; NPV/IRR Evaluation')">
+        <img src="images/nestle_dss_recommendation.png" alt="Nestlé Smart Snack Bar Excel DSS Recommendation Sheet">
+        <figcaption>Nestl&eacute; Excel DSS: Executive Recommendation &amp; Capital Budgeting Matrix</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT & VERIFICATION ================= -->
+<section id="contact">
+  <div class="container narrow">
+    <p class="field-tag">SECTION 7.0 &mdash; VERIFICATION &amp; CONTACT</p>
+    <h2>Connect &amp; Download Deliverables</h2>
+
+    <div class="report-stamp">
+      <p><span>Full Name</span> Lim Xun Yi</p>
+      <p><span>Matric No.</span> 298160</p>
+      <p><span>Programme</span> Bachelor of Science with Honours (Decision Science), Minor in Information Management</p>
+      <p><span>University</span> Universiti Utara Malaysia (UUM) &mdash; School of Quantitative Sciences</p>
+      <p><span>Host Company</span> Jabil Sdn. Bhd. (Jabil GBC), Bayan Lepas, Penang</p>
+      <p><span>Practicum Supervisor</span> Pn. Ruzleeta Binti Zakaria</p>
+      <p><span>Visiting Supervisor</span> Dr. Sahubar Ali bin Mohamed Nadhar Khan</p>
+      <p><span>FYP Supervisor</span> Prof. Madya Dr. Aida Mauziah Binti Benjamin</p>
+      <p><span>Email &amp; Phone</span> <a href="mailto:limxunyi0653@gmail.com">limxunyi0653@gmail.com</a> &middot; 016-5317369</p>
+      <p><span>Reports</span>
+        <a href="assets/Practicum_Report_Lim_Xun_Yi_298160.pdf" target="_blank" rel="noopener">Practicum Report (PDF)</a> &nbsp;|&nbsp;
+        <a href="assets/Resume_Lim_Xun_Yi.pdf" target="_blank" rel="noopener">Resume (PDF)</a> &nbsp;|&nbsp;
+        <a href="assets/SQITK3053_CADA_Group3_Report.pdf" target="_blank" rel="noopener">CADA DSS Report (PDF)</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>E-Portfolio compiled by Lim Xun Yi (Matric 298160) &middot; Bachelor of Science with Honours (Decision Science) &middot; Universiti Utara Malaysia</p>
+</footer>
+
+<!-- ================= 1-CLICK PDF DOCUMENT VIEWER MODAL ================= -->
+<div id="docModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="docModalTitle" onclick="if(event.target===this) closeDocModal()">
+  <div class="doc-modal">
+    <div class="doc-modal-bar">
+      <span id="docModalTitle" class="doc-modal-title">Document Preview</span>
+      <div class="doc-modal-actions">
+        <a id="docModalNewTab" href="#" target="_blank" rel="noopener" class="nav-report-btn">
+          <i class="fa-solid fa-up-right-from-square"></i> Open Full Tab
+        </a>
+        <button type="button" class="modal-close-btn" onclick="closeDocModal()">
+          <i class="fa-solid fa-xmark"></i> Close
+        </button>
+      </div>
+    </div>
+    <iframe id="docModalFrame" class="doc-modal-frame" title="PDF Document Preview"></iframe>
+  </div>
+</div>
+
+<!-- ================= 1-CLICK IMAGE LIGHTBOX MODAL ================= -->
+<div id="lightboxModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption" onclick="if(event.target===this) closeLightbox()">
+  <div class="lightbox-box">
+    <img id="lightboxImg" src="" alt="">
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+    <button type="button" class="modal-close-btn" onclick="closeLightbox()">
+      <i class="fa-solid fa-xmark"></i> Close Image
+    </button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
